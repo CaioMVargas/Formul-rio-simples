@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Entrevista</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 id="title" class="text center">Formulário de entrevista</h1>  
+        <p id="descricao" class="descricao text-center" >
+            Obrigado por completar o formulário ele é muito importante!
+        </p>
+        </header>  
+        <form id="pesquisa-form">
+            <div class="form-grupo">
+                <label id="nome-label" for="nome">Nome</label>
+                <Input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Coloque seu nome"
+                required
+                />
+                </div>
+                <div class="form-grupo">
+                    <label id="Numero-label" for="Numero">
+                        Idade <span class="clue"> (Obrigatório) </span> </label>
+                        <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Idade"
+                        />
+                </div>
+                <div class="form-grupo">
+                    <p>Selecione a sua Profissão</p>
+                    <select name="role" id="dropdown" class="form-control" required >
+                        <option value="Estudante">Estudante</option>
+                        <option value="Front">Front-end</option>
+                        <option value="Back">Back-end</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Dados">Cientista de Dados</option>
+                        <option value="Outros">Outro</option>
+                    </select>        
+                </div>
+                <div class="form-grupo">
+                    <label id="gmail-label" for="gmail">G-mail</label>
+                    <input
+                    type="text"
+                    name="gmail"
+                    id="gmail"
+                    class="form-control"
+                    placeholder="Insira o seu G-mail..."
+                    required
+                    />
+                    </div>
+
+                <div class="form-grupo">
+                    <p>Você recomendaria a gente para algum amigo?</p>
+                    <label>
+                        <input
+                        name="use-recomendado"
+                        value="claro"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        /> Claro </label
+                    >
+                        
+                    <label>
+                        <input
+                        name="use-recomendado"
+                        value="não"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        /> Não </label
+                    >
+                    <label>
+                        <input
+                        name="use-recomendado"
+                        value="recomendaria"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        /> Recomendaria Muito! </label
+                    > 
+                    </div>
+                    <div class="form-grupo">
+                        <p>
+                            Para você qual a parte mais importante de uma empresa?
+                        </p>
+                        <select name="Empresa" id="Empresa" required >
+                            <option value="Regras">Regras</option>
+                            <option value="Bônus">Bônus</option> 
+                            <option value="Vale">Vale Alimentação</option> 
+                            <option value="Planejamento">Planejamento</option>    
+                            <option value="Organização">Organização</option> 
+                        </select>
+                        </div>
+
+                        <div class="form-grupo">
+                            <p>
+                                Qual cargo você busca na nossa empresa?
+                            <span class="clue">(Selecione o cargo desejado)</span>
+                            </p>
+
+                            <label>
+                            <input
+                                name="preferido"
+                                value="Front-end"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />Front-end </label
+                            >
+                            <label>
+                                <input
+                                    name="preferido"
+                                    value="Back-end"
+                                    type="checkbox"
+                                    class="input-checkbox"
+                                />Back-end</label
+                            >
+                            <label>
+                                <input
+                                    name="preferido"
+                                    value="Mobile"
+                                    type="checkbox"
+                                    class="input-checkbox"
+                                />Mobile </label
+                            > 
+                            </div>
+                            
+                            <div class="form-grupo">
+                                <p>
+                                    Alguma sugestão para melhorarmos
+                                </p>
+                                <textarea
+                                id="Comentarios"
+                                class="input-textarea"
+                                name="Comente"
+                                placeholder="De sua sugestão..."
+                                ></textarea>
+                            </div>
+                            <div class="form-grupo">
+                                <button type="submit" id="submit"  class="submit-button">
+                                    Concluir
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                        
+    
+</body>
+</html>
